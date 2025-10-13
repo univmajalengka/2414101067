@@ -1,0 +1,42 @@
+/* Background halaman login */
+.login-body {
+    background: linear-gradient(135deg, #1e1e2f, #3a3a5a);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container kotak login */
+.login-container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Judul login */
+.login-container h2 {
+    font-weight: bold;
+    color: #2c2c54;
+}
+
+/* Tombol login */
+.login-container .btn-dark {
+    background: #2c2c54;
+    border: none;
+    transition: 0.3s;
+}
+
+.login-container .btn-dark:hover {
+    background: #474787;
+}
+
+/* Input fokus */
+.login-container .form-control:focus {
+    border-color: #2c2c54;
+    box-shadow: 0 0 5px rgba(44,44,84,0.5);
+}
