@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ragunan Zoo</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- ICON -->
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+
+    <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header>
+        <nav class="nav-container">
+
+            <!-- LOGO + TEXT -->
+            <div class="logo">
+                <img src="img/logo.png" alt="Logo">
+                <span>RAGUNAN ZOO</span>
+            </div>
+
+            <!-- MENU -->
+            <ul class="nav-links">
+                <li><a href="#">Beranda</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#wahana">Obyek Wisata</a></li>
+                <li><a href="#fasilitas">Fasilitas Wisata</a></li>
+                <li><a href="#paket">Paket Wisata</a></li>
+                <li><a href="#pemesanan">Pemesanan</a></li>
+                <li><a href="#galeri">Galery</a></li>
+            </ul>
+
+            <!-- HAMBURGER -->
+            <div class="menu-btn" onclick="toggleMenu()">☰</div>
+
+        </nav>
+    </header>
+
+    <!-- ================= SLIDER ================= -->
+    <section class="slider" id="home">
+        <div class="slides">
+
+            <div class="slide fade">
+                <img src="img/slide1.jpg" alt="Slide 1">
+                <div class="caption">
+                    <h1>Selamat Datang di Ragunan Zoo</h1>
+                    <p>Wisata alam dan margasatwa terbesar di Jakarta</p>
+                </div>
+            </div>
+
+            <div class="slide fade">
+                <img src="img/slide2.jpg" alt="Slide 2">
+                <div class="caption">
+                    <h1>Temukan Pengalaman Baru</h1>
+                    <p>Beragam satwa unik dari seluruh dunia</p>
+                </div>
+            </div>
+
+            <div class="slide fade">
+                <img src="img/slide3.jpg" alt="Slide 3">
+                <div class="caption">
+                    <h1>Jelajahi Keindahan Alam</h1>
+                    <p>Pemandangan hijau yang menenangkan</p>
+                </div>
+            </div>
+
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <div class="dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section class="about-section" id="about">
+        <h2 class="section-title">Taman Margasatwa Ragunan</h2>
+
+        <div class="about-wrapper">
+
+            <div class="about-image">
+                <img src="img/image_1_about.jpg" alt="Tentang Ragunan">
+            </div>
+
+            <div class="about-text">
+                <p>Selamat datang di Taman Margasatwa Ragunan, sebuah taman seluas <b>147 hektar</b> yang sudah menjadi bagian penting dari sejarah kota Jakarta. Ragunan menjadi rumah bagi lebih dari <b>2.800 ekor satwa</b> dan puluhan ribu pepohonan yang menciptakan suasana sejuk dan alami di tengah ibu kota.</p>
+
+                <p>Didirikan pada tahun <b>1864</b> dengan nama <i>Planten en Dierentuin</i> di era Batavia, Ragunan berkembang menjadi salah satu pusat konservasi satwa terbaik di Indonesia. Kawasan ini tidak hanya menjadi tempat rekreasi, tetapi juga edukasi dan pelestarian flora dan fauna.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================= WAHANA & ATRAKSI ================= -->
+    <section class="wahana-section" id="wahana">
+        <h2 class="section-title">Wahana & Atraksi</h2>
+
+        <div class="wahana-wrapper">
+            <button class="wahana-btn wahana-prev" onclick="scrollWahana(-1)">&#10094;</button>
+
+            <div class="wahana-list">
+                <div class="wahana-item">
+                    <img src="img/wahana1.jpg" alt="Perahu Danau Ragunan">
+                    <h3>Perahu Danau Ragunan</h3>
+                    <p>Rasakan suasana tenang mengelilingi danau Ragunan.</p>
+                    <span class="harga">IDR 20.000</span>
+                </div>
+                <div class="wahana-item">
+                    <img src="img/wahana2.jpg" alt="Zona Primata">
+                    <h3>Zona Primata</h3>
+                    <p>Rumah bagi berbagai spesies kera & orangutan.</p>
+                    <span class="harga">IDR 20.000</span>
+                </div>
+                <div class="wahana-item">
+                    <img src="img/wahana3.jpg" alt="Zona Reptil">
+                    <h3>Zona Reptil</h3>
+                    <p>Koleksi ular, kadal, iguana, dan buaya.</p>
+                    <span class="harga">IDR 25.000</span>
+                </div>
+                <div class="wahana-item">
+                    <img src="img/wahana4.jpg" alt="Feeding Experience">
+                    <h3>Feeding Experience</h3>
+                    <p>Pengalaman memberi makan hewan secara aman.</p>
+                    <span class="harga">IDR 30.000</span>
+                </div>
+            </div>
+
+            <button class="wahana-btn wahana-next" onclick="scrollWahana(1)">&#10095;</button>
+        </div>
+    </section>
+
+   <!-- ===== VIDEO & JAM OPERASIONAL ===== -->
+<section class="video-operasional-wrapper">
+
+    <!-- KIRI: Video atas-bawah -->
+    <div class="video-left">
+        <iframe src="https://www.youtube.com/embed/xI8pRXRRhfk" 
+                title="Video Profil Ragunan" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+        </iframe>
+
+        <iframe src="https://www.youtube.com/embed/FWae8FIuFKE" 
+                title="Ragunan Zoo Tour" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+        </iframe>
+    </div>
+
+    <!-- KANAN: Jam Operasional -->
+    <div class="operasional-box">
+        <h4>🕒 Jam Operasional</h4>
+        <p>Selasa – Minggu</p>
+        <p>07.00 – 16.00 WIB</p>
+
+        <h4>📍 Alamat</h4>
+        <p>Jl. Harsono RM No.1, Ragunan, Jakarta Selatan</p>
+
+        <h4>📞 Kontak</h4>
+        <p>0812-3456-7890 (Official)</p>
+    </div>
+
+</section>
+
+    <!-- ================= FASILITAS ================= -->
+    <section class="fasilitas-section" id="fasilitas">
+        <h2 class="section-title">Fasilitas Wisata</h2>
+
+        <div class="fasilitas-list">
+            <div class="fasilitas-item">
+                <h3>Kereta Keliling</h3>
+                <p>Di Taman Margasatwa Ragunan, Anda bisa menikmati fasilitas kereta keliling yang menawarkan pengalaman seru berkeliling taman. Tarif Rp 10.000 per orang.</p>
+            </div>
+            <div class="fasilitas-item">
+                <h3>Taman Perahu Angsa</h3>
+                <p>Taman perahu merupakan kolam besar seluas 2.000 m², terdapat pulau-pulau buatan. Tarif perahu angsa Rp 20.000 per orang.</p>
+            </div>
+            <div class="fasilitas-item">
+                <h3>Penyewaan Buggy Car (E-Car)</h3>
+                <p>Anda bisa menyewa mobil listrik (e-car) untuk berkeliling taman. Tarif sewa Rp 250.000 per jam.</p>
+            </div>
+            <div class="fasilitas-item">
+                <h3>Pusat Primata Schmutzer</h3>
+                <p>Pusat primata internasional dengan berbagai primata Indonesia dan eksotis lainnya. Kompleks 13 ha dengan konsep open zoo.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= PAKET WISATA ================= -->
+    <section class="paket-section" id="paket">
+        <h2 class="section-title">Paket Wisata</h2>
+
+        <div class="paket-list">
+            <h3>Tarif Masuk Pengunjung</h3>
+            <ul>
+                <li>Dewasa: Rp 4.000/orang</li>
+                <li>Anak-anak: Rp 3.000/orang</li>
+            </ul>
+
+            <h3>Tarif Penitipan Kendaraan / Parkir</h3>
+            <ul>
+                <li>Bus besar, truk besar, mobil box besar: Rp 15.000/hari</li>
+                <li>Bus kecil, truk kecil, mobil box kecil, pick up besar: Rp 12.500/hari</li>
+                <li>Mobil sedan, minibus/pickup kecil: Rp 6.000/hari</li>
+                <li>Sepeda motor & kendaraan roda tiga: Rp 3.000/hari</li>
+                <li>Sepeda: Rp 1.000/hari</li>
+            </ul>
+
+            <h3>Pemakaian Fasilitas Wahana</h3>
+            <ul>
+                <li>Taman Satwa Anak: Rp 2.500/orang</li>
+                <li>Perahu Angsa: Rp 20.000/satu kali keliling</li>
+                <li>Kereta Keliling: Rp 10.000/satu kali keliling</li>
+                <li>Sepeda Tunggal: Rp 15.000/orang</li>
+                <li>Sepeda Ganda: Rp 20.000/orang</li>
+            </ul>
+
+            <h3>Tarif Masuk Pusat Primata Schmutzer</h3>
+            <ul>
+                <li>Selasa – Jumat (usia 3+): Rp 6.000/orang</li>
+                <li>Sabtu – Minggu / Libur Nasional (usia 3+): Rp 7.500/orang</li>
+            </ul>
+
+            <h3>Pembayaran</h3>
+            <p>Pembayaran tiket menggunakan Kartu Jakcard Bank DKI. Bisa dibeli di loket Ragunan, saldo minimum Rp 10.000, maksimal Rp 1.000.000.</p>
+        </div>
+    </section>
+
+ <section class="pemesanan-section" id="pemesanan">
+    <h2 class="section-title">Pemesanan Tiket & Jadwal Makan Satwa</h2>
+
+    <!-- FORM PEMESANAN -->
+    <form class="form-pemesanan">
+        <label>Nama Lengkap:</label>
+        <input type="text" name="nama" required>
+
+        <label>Email / No. HP:</label>
+        <input type="text" name="kontak" required>
+
+        <label>Tanggal Kunjungan:</label>
+        <input type="date" name="tanggal" required>
+
+        <label>Paket / Wahana:</label>
+        <select name="paket" required>
+            <option value="perahu">Perahu Angsa</option>
+            <option value="perahu">Zona Primata</option>
+            <option value="perahu">Zona Reptil</option>
+            <option value="perahu">Feeding Experience</option>
+            <option value="kereta">Kereta Keliling</option>
+            <option value="e-car">E-Car</option>
+            <option value="pusat-primata">Pusat Primata</option>
+        </select>
+
+        <label>Jumlah Pengunjung:</label>
+        <input type="number" name="jumlah" min="1" value="1" required>
+
+        <button type="submit">Pesan Sekarang</button>
+    </form>
+
+    <!-- JADWAL MAKAN SATWA -->
+    <div class="pemesanan-content">
+        <h3>Jadwal Makan Satwa</h3>
+        <ul>
+            <li>12:00 – 12:30 : Gorilla (Makan Siang)</li>
+            <li>14:30 – 14:45 : Gajah Sumatera (Makan Siang)</li>
+            <li>15:00 – 15:15 : Gajah Sumatera (Makan Sore)</li>
+            <li>15:00 – 15:15 : Komodo (Makan Sore)</li>
+        </ul>
+
+        <!-- PETA -->
+        <h3>Lokasi & Peta</h3>
+        <p>Jl. Harsono RM. No.1, Ragunan, Pasar Minggu, Jakarta Selatan 12550 Indonesia</p>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.3958297188357!2d106.82298291476958!3d-6.303144695498529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f0aefed863db%3A0x378e2d1e6e768a2c!2sTaman%20Margasatwa%20Ragunan!5e0!3m2!1sid!2sid!4v1600000000000!5m2!1sid!2sid" 
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+</section>
+
+
+    <!-- ================= GALERI ================= -->
+<section class="galeri-section" id="galeri">
+    <h2 class="section-title">Galeri Foto</h2>
+
+    <div class="galeri-wrapper">
+        <!-- Tombol Prev -->
+        <button class="galeri-btn galeri-prev" onclick="scrollGaleri(-1)">&#10094;</button>
+
+        <!-- List Foto -->
+        <div class="galeri-list">
+            <div class="galeri-item"><img src="img/galeri1.jpg" alt="Foto 1"></div>
+            <div class="galeri-item"><img src="img/galeri2.jpg" alt="Foto 2"></div>
+            <div class="galeri-item"><img src="img/galeri3.jpg" alt="Foto 3"></div>
+            <div class="galeri-item"><img src="img/galeri4.jpg" alt="Foto 4"></div>
+            <div class="galeri-item"><img src="img/galeri5.jpg" alt="Foto 5"></div>
+            <div class="galeri-item"><img src="img/galeri6.jpg" alt="Foto 6"></div>
+            <div class="galeri-item"><img src="img/galeri7.jpg" alt="Foto 7"></div>
+            <div class="galeri-item"><img src="img/galeri8.jpg" alt="Foto 8"></div>
+            <div class="galeri-item"><img src="img/galeri9.jpg" alt="Foto 9"></div>
+            <div class="galeri-item"><img src="img/galeri10.jpg" alt="Foto 10"></div>
+        </div>
+
+        <!-- Tombol Next -->
+        <button class="galeri-btn galeri-next" onclick="scrollGaleri(1)">&#10095;</button>
+    </div>
+</section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+        <p>Taman Margasatwa Ragunan<br>
+        Jl. Harsono RM. No. 1, Ragunan, Pasar Minggu,<br>
+        Jakarta Selatan 12550 Indonesia<br>
+        Tel. (021) 7884 7114 // Fax. (021) 780 5280<br>
+        Email : ragunanzoo@jakarta.go.id<br><br>
+        Copyright © 2021 Ragunan Zoo. All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
