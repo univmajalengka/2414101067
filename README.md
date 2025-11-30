@@ -2,12 +2,6 @@ Saya Taulany Shaqilla Biran, Mahasiswa dari Program Studi Informatika Fakultas T
 
 ---
 
-## 🍔 Tentang Website
-
-**Nestly** adalah kedai makanan rumahan yang menghadirkan cita rasa sederhana namun penuh makna, seperti masakan di meja keluarga. Setiap hidangan kami diracik dengan bahan segar dan sentuhan hati — bukan hanya untuk mengenyangkan, tetapi juga untuk membawa rasa hangat dan nostalgia di setiap suapan. Website ini hadir untuk mempermudah pelanggan menikmati hidangan khas rumah secara online, dengan pengalaman pemesanan yang mudah dan cepat.
-
----
-
 ## 🚀 Fitur Website
 
 🏠 **Halaman Utama** — Menampilkan daftar produk makanan yang dijual.  
