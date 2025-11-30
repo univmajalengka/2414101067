@@ -1,0 +1,85 @@
+/* ===== Global Style ===== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #fff8dc; /* cream */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Card Form */
+.card {
+    width: 360px;
+    background: #80000033; /* marun transparan */
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 6px 28px rgba(0,0,0,0.15);
+}
+
+/* Judul */
+.judul {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    color: #800000; /* marun gelap */
+    margin-bottom: 20px;
+}
+
+/* Form Box */
+.form-box label {
+    font-weight: 600;
+    color: #4d0000; /* marun gelap lebih lembut */
+    display: block;
+    margin-bottom: 6px;
+}
+
+.form-box input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 2px solid #ffd8b1; /* cream soft */
+    outline: none;
+    background: #fff5e6; /* cream terang */
+    transition: 0.3s;
+}
+
+.form-box input:focus {
+    border-color: #800000;
+}
+
+/* Tombol */
+.btn {
+    width: 100%;
+    background: #800000; /* marun */
+    border: none;
+    color: #fff;
+    padding: 12px;
+    margin-top: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.25s;
+}
+
+.btn:hover {
+    background: #b30000; /* marun lebih cerah */
+}
+
+/* Hasil */
+.hasil {
+    margin-top: 20px;
+    background: #fff0e6; /* cream lembut */
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid #ffb3b3; /* soft marun */
+}
+
+.hasil h3 {
+    margin-top: 0;
+    color: #800000;
+}
